@@ -74,4 +74,4 @@ if [[ -n $v4 && -n $v6 ]]; then
 fi
 green "用户名：root"
 green "密码：$password"
-yellow "请妥善保存好登录信息！然后重启VPS确保设置已保存！"
+yellow "请妥善保存好登录信息！然后重启VPS确保设置已保存！TG频道：@kexueshangwang88"
