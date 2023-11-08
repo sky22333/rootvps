@@ -5,4 +5,4 @@
 
 ```wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/rootvps && bash rootvps```
 
-密码为随机生成，请注意保存
+
