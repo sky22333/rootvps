@@ -12,7 +12,7 @@ wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/ro
 ###  优化版：
 
 ```
-wget -N --no-check-certificate https://github.com/taotao1058/root.sh/raw/main/root.sh && bash root.sh
+wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/root && bash root
 ```
 
 ---
