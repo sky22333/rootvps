@@ -10,7 +10,7 @@ Tip="${YELLOW}[注意]${NC}"
 
 # 确保脚本以root身份运行
 if [[ $(whoami) != "root" ]]; then
-    echo -e "${Error}请执行 ${GREEN}sudo -i${NC} 后以${GREEN}root${NC}权限执行此脚本！"
+    echo -e "${Error}请以root用户执行此脚本，或者使用 ${GREEN}sudo -i${NC} 提升权限后再执行。"
     exit 1
 fi
 
@@ -19,8 +19,7 @@ read -p "请设置ssh端口号（默认为 22）：" sshport
 sshport=${sshport:-22} # 如果用户没有输入，则使用默认值22
 
 # 读取用户输入的root密码
-read -s -p "请设置root密码：" passwd
-echo # 新行
+read -p "请设置root密码：" passwd
 if [ -z "$passwd" ]; then
     echo -e "${Error}未输入密码，无法执行操作！"
     exit 1
@@ -64,7 +63,7 @@ for pts in $pts_list; do
 done
 
 # 输出结果
-echo -e "${Info}root密码设置 ${GREEN}成功${NC}"
-echo -e "${Info}ssh端口：${GREEN}$sshport ${NC}"
-echo -e "${Info}用户名：${GREEN}root${NC}"
-echo -e "${Info}root密码：${GREEN}已更新 ${NC}"
+echo -e "${Info}root密码已设置。"
+echo -e "${Info}ssh端口：$sshport"
+echo -e "${Info}用户名：root"
+echo -e "${Info}root密码：$password"
