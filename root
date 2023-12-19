@@ -24,6 +24,10 @@ else
     password=$passwd
 fi
 
+echo -e "${Info}root密码：$password"
+echo -e "${Info}ssh端口：$sshport"
+echo -e "${Info}用户名：root"
+
 echo root:$password | chpasswd
 
 sed -i "s/^#\?Port .*/Port $sshport/" /etc/ssh/sshd_config
@@ -40,19 +44,12 @@ for pts in $pts_list; do
     fi
 done
 
-echo -e "${Info}root密码已设置。"
-echo -e "${Info}ssh端口：$sshport"
-echo -e "${Info}用户名：root"
-echo -e "${Info}root密码：$password"
-
 if systemctl --all --type service | grep -q sshd.service; then
     SSH_SERVICE_NAME="sshd"
 else
     SSH_SERVICE_NAME="ssh"
 fi
 
-echo -e "${Info}即将重启SSH服务..."
-sleep 2
 systemctl restart $SSH_SERVICE_NAME
 if systemctl status $SSH_SERVICE_NAME >/dev/null; then
     echo -e "${Info}SSH服务重启 ${GREEN}成功${NC}"
