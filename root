@@ -41,9 +41,9 @@ if [[ $(whoami) == "root" ]]; then
 
     # 输出结果
     echo -e "${Info}root密码设置 ${GREEN}成功${NC}"
-    echo -e "${Info}VPS当前ssh端口：${GREEN}$sshport ${NC}"
-    echo -e "${Info}VPS用户名：${GREEN}root${NC}"
-    echo -e "${Info}vps当前root密码：${GREEN}$password ${NC}"
+    echo -e "${Info}ssh端口：${GREEN}$sshport ${NC}"
+    echo -e "${Info}用户名：${GREEN}root${NC}"
+    echo -e "${Info}root密码：${GREEN}$password ${NC}"
 else
     echo -e "${Error}请执行 ${GREEN}sudo -i${NC} 后以${GREEN}root${NC}权限执行此脚本！"
     exit 1
