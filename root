@@ -8,17 +8,14 @@ Info="${GREEN}[信息]${NC}"
 Error="${RED}[错误]${NC}"
 Tip="${YELLOW}[注意]${NC}"
 
-# 确保脚本以root身份运行
 if [[ $(whoami) != "root" ]]; then
     echo -e "${Error}请以root用户执行此脚本，或者使用 ${GREEN}sudo -i${NC} 提升权限后再执行。"
     exit 1
 fi
 
-# 读取用户输入的SSH端口
 read -p "请设置ssh端口号（默认为 22）：" sshport
 sshport=${sshport:-22} # 如果用户没有输入，则使用默认值22
 
-# 读取用户输入的root密码
 read -p "请设置root密码：" passwd
 if [ -z "$passwd" ]; then
     echo -e "${Error}未输入密码，无法执行操作！"
@@ -27,24 +24,20 @@ else
     password=$passwd
 fi
 
-# 更改root密码
 echo root:$password | chpasswd
 
-# 修改SSH配置文件
 sed -i "s/^#\?Port .*/Port $sshport/" /etc/ssh/sshd_config
 sed -i 's/^#\?PermitRootLogin .*/PermitRootLogin yes/' /etc/ssh/sshd_config
 sed -i 's/^#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config
 sed -i 's/^#\?RSAAuthentication .*/RSAAuthentication yes/' /etc/ssh/sshd_config
 sed -i 's/^#\?PubkeyAuthentication .*/PubkeyAuthentication yes/' /etc/ssh/sshd_config
 
-# 检查SSH服务的名称并重启
 if systemctl --all --type service | grep -q sshd.service; then
     SSH_SERVICE_NAME="sshd"
 else
     SSH_SERVICE_NAME="ssh"
 fi
 
-# 重启SSH服务
 systemctl restart $SSH_SERVICE_NAME
 if systemctl status $SSH_SERVICE_NAME >/dev/null; then
     echo -e "${Info}SSH服务重启 ${GREEN}成功${NC}"
@@ -53,7 +46,6 @@ else
     exit 1
 fi
 
-# 结束除当前终端会话之外的所有会话
 current_tty=$(tty)
 pts_list=$(who | awk '{print $2}')
 for pts in $pts_list; do
@@ -62,7 +54,6 @@ for pts in $pts_list; do
     fi
 done
 
-# 输出结果
 echo -e "${Info}root密码已设置。"
 echo -e "${Info}ssh端口：$sshport"
 echo -e "${Info}用户名：root"
