@@ -27,6 +27,7 @@ fi
 echo -e "${Info}root密码：$password"
 echo -e "${Info}ssh端口：$sshport"
 echo -e "${Info}用户名：root"
+echo -e "${Info}修改成功！"
 
 echo root:$password | chpasswd
 
