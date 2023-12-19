@@ -32,20 +32,7 @@ sed -i 's/^#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/ss
 sed -i 's/^#\?RSAAuthentication .*/RSAAuthentication yes/' /etc/ssh/sshd_config
 sed -i 's/^#\?PubkeyAuthentication .*/PubkeyAuthentication yes/' /etc/ssh/sshd_config
 
-if systemctl --all --type service | grep -q sshd.service; then
-    SSH_SERVICE_NAME="sshd"
-else
-    SSH_SERVICE_NAME="ssh"
-fi
-
-systemctl restart $SSH_SERVICE_NAME
-if systemctl status $SSH_SERVICE_NAME >/dev/null; then
-    echo -e "${Info}SSH服务重启 ${GREEN}成功${NC}"
-else
-    echo -e "${Error}SSH服务重启 ${RED}失败${NC}"
-    exit 1
-fi
-
+# 结束除当前终端会话之外的所有会话
 current_tty=$(tty)
 pts_list=$(who | awk '{print $2}')
 for pts in $pts_list; do
@@ -54,7 +41,24 @@ for pts in $pts_list; do
     fi
 done
 
+# 输出信息
 echo -e "${Info}root密码已设置。"
 echo -e "${Info}ssh端口：$sshport"
 echo -e "${Info}用户名：root"
 echo -e "${Info}root密码：$password"
+
+# 检查SSH服务的名称并重启
+if systemctl --all --type service | grep -q sshd.service; then
+    SSH_SERVICE_NAME="sshd"
+else
+    SSH_SERVICE_NAME="ssh"
+fi
+
+# 重启SSH服务
+systemctl restart $SSH_SERVICE_NAME
+if systemctl status $SSH_SERVICE_NAME >/dev/null; then
+    echo -e "${Info}SSH服务重启 ${GREEN}成功${NC}"
+else
+    echo -e "${Error}SSH服务重启 ${RED}失败${NC}"
+    exit 1
+fi
