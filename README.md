@@ -64,7 +64,7 @@ yum install curl wget git zip tar iptables lsof -y
 ``` 
 
 
-####  如果重装报错请手动安装所需环境：
+####  如果DD报错请手动安装所需环境尝试：
 ```
 #Debian/Ubuntu:
 apt-get install -y xz-utils openssl gawk file
