@@ -37,9 +37,9 @@ sudo wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/ma
 wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/install.sh && chmod +x install.sh && sudo ./install.sh -u focal
 ```
 
-####  默认root密码：MoeClub.org
+  默认root密码：MoeClub.org
 
-#### 重装完系统安装必备软件
+ 重装完系统安装必备软件
 
  Debian/Ubuntu 命令：
  
@@ -64,7 +64,7 @@ yum install curl wget git zip tar iptables lsof -y
 ``` 
 
 
-####  如果DD报错请手动安装所需环境尝试：
+  如果DD报错请手动安装所需环境尝试：
 ```
 #Debian/Ubuntu:
 apt-get install -y xz-utils openssl gawk file
