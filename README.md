@@ -48,7 +48,7 @@ wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/in
 ---
  重装完系统安装必备软件
 
- Debian/Ubuntu 命令：
+Debian/Ubuntu 命令：
  
 
 ```
@@ -59,7 +59,7 @@ apt install curl wget git zip tar iptables lsof -y
 ```
 
 
- CentOS 命令：
+CentOS 命令：
 
 ```
 yum update -y
@@ -71,10 +71,13 @@ yum install curl wget git zip tar iptables lsof -y
 
   如果DD报错请手动安装所需环境尝试：
 ```
- Debian/Ubuntu 命令：
+Debian/Ubuntu 命令：
+
 apt-get install -y xz-utils openssl gawk file
+
  
- CentOS 命令：
+CentOS 命令：
+
 yum install -y xz openssl gawk file
 ```
 
