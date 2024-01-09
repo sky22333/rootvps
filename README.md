@@ -14,7 +14,7 @@ wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/ro
 ###  简洁版：
 
 ```
-sudo wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/xin && sudo bash xin
+wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/rootvps && bash rootvps
 ```
 
 ### 新系统优化脚本：
