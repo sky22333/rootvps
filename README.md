@@ -38,10 +38,13 @@ wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/in
 ```
 
   默认登录信息
+  
   用户名：root
+  
   端口：22
+  
   root密码：MoeClub.org
-
+---
  重装完系统安装必备软件
 
  Debian/Ubuntu 命令：
