@@ -51,7 +51,7 @@ wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/in
 | `--ip-mask`         | 设置网络掩码                                          | `--ip-mask 255.255.255.0`        |
 | `--ip-gate`         | 设置默认网关                                          | `--ip-gate 192.168.0.1`          |
 | `--ip-dns`          | 设置DNS服务器地址                                      | `--ip-dns 8.8.8.8`               |
-| `-apt` `-yum` 或 `--mirror` | 指定软件源镜像地址                               | `--mirror http://mirror.example.com` |
+| `-apt` `-yum`  | 指定软件源镜像地址                               | `--apt http://mirror.example.com` |
 | `-rdp`              | 设置Windows远程桌面端口（仅在使用Windows镜像时有效）       | `-rdp 3389`                      |
 | `-port`             | 设置SSH端口                                           | `-port 22`                       |
 | `--noipv6`          | 禁用IPv6                                               | `--noipv6`                       |
