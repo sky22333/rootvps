@@ -33,6 +33,12 @@ sudo wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/ma
 
 ###  请用root用户执行：
 
+自定义密码：
+```
+wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/install.sh && chmod +x install.sh && sudo ./install.sh -u focal -p "自定义密码"
+```
+
+默认：
 ```
 wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/install.sh && chmod +x install.sh && sudo ./install.sh -u focal
 ```
