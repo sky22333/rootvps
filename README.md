@@ -39,7 +39,7 @@ wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/in
 
 ####  默认root密码：MoeClub.org
 
-如果报错请手动安装所需环境:
+如果报错请手动安装所需环境：
 ```
 #Debian/Ubuntu:
 apt-get install -y xz-utils openssl gawk file
