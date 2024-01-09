@@ -92,15 +92,15 @@ yum install -y xz openssl gawk file
 | `-u`    | 安装Ubuntu系统，后接发行版名称（如 `focal`）               | `-u focal`                       |
 | `-c`    | 安装CentOS系统，后接版本号（如 `7`）                       | `-c 7`                           |
 | `-dd`    | 使用指定的镜像URL进行安装                                 | `-dd http://example.com/image.iso` |
-| `-p`  | 设置root用户的密码                                     | `-p “密码”`                |
+| `-p`  | 设置root用户的密码                                     | `-p "密码"`                |
 | `-i`  | 选择网络接口                                           | `-i eth0`                        |
 | `--ip-addr`         | 设置静态IP地址                                         | `--ip-addr 192.168.0.100`        |
 | `--ip-mask`         | 设置网络掩码                                          | `--ip-mask 255.255.255.0`        |
 | `--ip-gate`         | 设置默认网关                                          | `--ip-gate 192.168.0.1`          |
 | `--ip-dns`          | 设置DNS服务器地址                                      | `--ip-dns 8.8.8.8`               |
 | `-apt` `--mirror`  | 指定软件源镜像地址                               | `--mirror “http://mirror.example.com”` |
-| `-rdp`              | 设置Windows远程桌面端口（仅在使用Windows镜像时有效）       | `-rdp “3389”`                      |
-| `-port`             | 设置SSH端口                                           | `-port “22”`                       |
+| `-rdp`              | 设置Windows远程桌面端口（仅在使用Windows镜像时有效）       | `-rdp 3389`                      |
+| `-port`             | 设置SSH端口                                           | `-port 22`                       |
 | `--noipv6`          | 禁用IPv6                                               | `--noipv6`                       |
 | `-firmware`         | 包含固件支持（仅Debian有效）                             | `-firmware`                      |
 | `-cmd`              | 设置在安装后执行的命令或脚本                              | `-cmd 'echo hello'`              |
