@@ -26,9 +26,12 @@ sudo wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/ma
 
 ---
 
-##  一键DD系统：
+#  一键DD系统
 
 [DD脚本来自萌咖大佬](https://github.com/MoeClub/Note)
+
+
+###  请用root用户执行：
 
 ```
 wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/install.sh && chmod +x install.sh && sudo ./install.sh -u
