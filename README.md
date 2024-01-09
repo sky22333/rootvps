@@ -35,7 +35,7 @@ sudo wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/ma
 ###  请用root用户执行：
 
 ```
-wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/install.sh && chmod +x install.sh && sudo ./install.sh -u
+wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/install.sh && chmod +x install.sh && sudo ./install.sh -u focal
 ```
 
 ####  默认root密码：MoeClub.org
