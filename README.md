@@ -37,7 +37,10 @@ sudo wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/ma
 wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/install.sh && chmod +x install.sh && sudo ./install.sh -u focal
 ```
 
-  默认root密码：MoeClub.org
+  默认登录信息
+  用户名：root
+  端口：22
+  root密码：MoeClub.org
 
  重装完系统安装必备软件
 
