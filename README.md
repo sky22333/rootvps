@@ -38,6 +38,8 @@ sudo wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/ma
 wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/install.sh && chmod +x install.sh && sudo ./install.sh -u
 ```
 
+####  默认root密码：MoeClub.org
+
 ---
 
 ###  可以在脚本结尾传递参数来定制操作系统的安装
