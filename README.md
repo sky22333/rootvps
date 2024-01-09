@@ -1,16 +1,15 @@
 
-#  VPS开启root用户登录
+#  VPS工具脚本
 
-###  修改SSH端口和root密码
 
-###  一键修改：
+###  修改root密码：
 
 ```
 wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/rootvps && bash rootvps
 ```
 
 
-###  简洁版：
+###  修改root密码简洁版：
 
 ```
 wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/root && bash root
