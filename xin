@@ -73,11 +73,11 @@ EOF
 sysctl -p
 
 if ! grep -q '^root:[*\!]:[0-9]' /etc/shadow; then
-    echo "root密码未设置。"
+    echo "检查到root密码未设置。"
     echo "请输入新的root密码："
     sudo passwd root
 else
     echo "root密码已设置。"
 fi
 
-echo "系统更新完成，已开启root登录。"
+echo "系统优化已完成。"
