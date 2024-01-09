@@ -20,7 +20,7 @@ wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/ro
 ### 新系统优化脚本：
 
 ```
-wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/xin && bash xin
+sudo wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/xin && sudo bash xin
 ```
 
 ---
