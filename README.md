@@ -31,7 +31,7 @@ sudo wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/ma
 [DD脚本来自萌咖大佬](https://github.com/MoeClub/Note)
 
 
-###  请用root用户执行：
+###  请用root用户执行
 
 ####  自定义密码：
 ```
