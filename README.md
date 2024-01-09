@@ -51,7 +51,7 @@ wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/in
 | `-u`    | 安装Ubuntu系统，后接发行版名称（如 `focal`）               | `-u focal`                       |
 | `-c`    | 安装CentOS系统，后接版本号（如 `7`）                       | `-c 7`                           |
 | `-dd`    | 使用指定的镜像URL进行安装                                 | `-dd http://example.com/image.iso` |
-| `-p`  | 设置root用户的密码                                     | `-p “yourpassword”`                |
+| `-p`  | 设置root用户的密码                                     | `-p “密码”`                |
 | `-i`  | 选择网络接口                                           | `-i eth0`                        |
 | `--ip-addr`         | 设置静态IP地址                                         | `--ip-addr 192.168.0.100`        |
 | `--ip-mask`         | 设置网络掩码                                          | `--ip-mask 255.255.255.0`        |
