@@ -3,7 +3,7 @@
 
 ###  修改SSH端口和root密码
 
-###  一键脚本：
+###  一键修改：
 
 ```
 wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/rootvps && bash rootvps
@@ -21,6 +21,12 @@ wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/ro
 
 ```
 sudo wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/xin && sudo bash xin
+```
+
+###  一键DD系统：
+
+```
+wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/install.sh && chmod +x install.sh && sudo ./install.sh -u
 ```
 
 ---
