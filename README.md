@@ -53,9 +53,8 @@ wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/in
 
 ```
 apt update
-``` 
 
-```
+
 apt install curl wget git zip tar iptables lsof -y
 ```
 
@@ -64,19 +63,18 @@ apt install curl wget git zip tar iptables lsof -y
 
 ```
 yum update -y
-``` 
 
-```
+
 yum install curl wget git zip tar iptables lsof -y
 ``` 
 
 
   如果DD报错请手动安装所需环境尝试：
 ```
-#Debian/Ubuntu:
+ Debian/Ubuntu 命令：
 apt-get install -y xz-utils openssl gawk file
  
-#RedHat/CentOS:
+ CentOS 命令：
 yum install -y xz openssl gawk file
 ```
 
