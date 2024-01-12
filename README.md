@@ -114,7 +114,7 @@ yum install -y xz openssl gawk file
 
 ---
 
-# 另一个版本
+# 另一个版本DD脚本
 
 #### 先下载
 ```
