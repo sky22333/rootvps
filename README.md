@@ -116,17 +116,17 @@ yum install -y xz openssl gawk file
 
 # 另一个版本
 
-下载
+#### 先下载
 ```
 wget --no-check-certificate -qO InstallNET.sh 'https://raw.githubusercontent.com/leitbogioro/Tools/master/Linux_reinstall/InstallNET.sh' && chmod a+x InstallNET.sh
 ```
 
-国内环境下载
+#### 国内环境下载
 ```
 wget --no-check-certificate -qO InstallNET.sh 'https://gitee.com/mb9e8j2/Tools/raw/master/Linux_reinstall/InstallNET.sh' && chmod a+x InstallNET.sh
 ```
 
-运行
+### 运行
 ```
 bash InstallNET.sh -debian -port "端口" -pwd '密码'
 ```
