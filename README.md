@@ -116,6 +116,8 @@ yum install -y xz openssl gawk file
 
 # 另一个版本DD脚本
 
+[脚本原地址](https://github.com/leitbogioro/Tools)
+
 #### 先下载
 ```
 wget --no-check-certificate -qO InstallNET.sh 'https://raw.githubusercontent.com/leitbogioro/Tools/master/Linux_reinstall/InstallNET.sh' && chmod a+x InstallNET.sh
