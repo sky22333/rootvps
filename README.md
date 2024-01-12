@@ -161,6 +161,7 @@ bash InstallNET.sh -debian -port "22" -pwd '密码'
 对于 Windows：`Administrator`
 
 默认密码
+
 对于 Linux：`LeitboGi0ro`
 
 对于 Windows：`Teddysun.com`
