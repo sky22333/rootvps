@@ -130,7 +130,7 @@ wget --no-check-certificate -qO InstallNET.sh 'https://gitee.com/mb9e8j2/Tools/r
 
 ### 运行
 ```
-bash InstallNET.sh -debian -port "22" -pwd '密码'
+bash InstallNET.sh -debian -pwd '密码'
 ```
 
 ### 运行结尾传递参数
