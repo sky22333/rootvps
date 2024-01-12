@@ -147,7 +147,7 @@ bash InstallNET.sh -debian -port "22" -pwd '密码'
 `-almalinux/alma 8/9` : AlmaLinux 8 及更高版本
 
 
-`-ubuntu 20.04/22.04/24.04` (测试中，不稳定，请勿安装在生产环境中！)
+`-ubuntu 20.04/22.04/24.04` 不稳定，可能失联
 
 
 `-windows 10/11/2012/2016/2019/2022`
