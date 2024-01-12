@@ -22,7 +22,7 @@ wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/ro
 
 #  VPS一键DD 重装系统
 
-[DD脚本来自萌咖大佬](https://github.com/MoeClub/Note)
+[脚本原地址萌咖](https://github.com/MoeClub/Note)
 
 
 ###  请用root用户执行
