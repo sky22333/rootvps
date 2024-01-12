@@ -114,7 +114,7 @@ yum install -y xz openssl gawk file
 
 ---
 
-##  另一个版本
+# 另一个版本
 
 下载
 ```
@@ -131,7 +131,7 @@ wget --no-check-certificate -qO InstallNET.sh 'https://gitee.com/mb9e8j2/Tools/r
 bash InstallNET.sh -debian -port "端口" -pwd '密码'
 ```
 
-#### 参数
+### 参数
 
 参数详细说明
 
@@ -152,7 +152,7 @@ bash InstallNET.sh -debian -port "端口" -pwd '密码'
 
 -windows 10/11/2012/2016/2019/2022
 
-#### 默认信息
+### 默认信息
 
 默认用户名
 
