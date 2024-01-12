@@ -113,3 +113,67 @@ yum install -y xz openssl gawk file
 
 
 ---
+
+##  另一个版本
+
+下载
+```
+wget --no-check-certificate -qO InstallNET.sh 'https://raw.githubusercontent.com/leitbogioro/Tools/master/Linux_reinstall/InstallNET.sh' && chmod a+x InstallNET.sh
+```
+
+国内环境下载
+```
+wget --no-check-certificate -qO InstallNET.sh 'https://gitee.com/mb9e8j2/Tools/raw/master/Linux_reinstall/InstallNET.sh' && chmod a+x InstallNET.sh
+```
+
+运行
+```
+bash InstallNET.sh -debian -port "端口" -pwd '密码'
+```
+
+#### 参数
+
+参数详细说明
+
+-debian 7-12：Debian 7 及更高版本
+
+
+-kali Rolling/dev/experimental：Kali Rolling，开发和实验，“Kali Rolling”显然是最推荐的。
+
+
+-centos 7 或 8/9-stream：CentOS 7 及更高版本
+
+
+-almalinux/alma 8/9 : AlmaLinux 8 及更高版本
+
+
+-ubuntu 20.04/22.04/24.04(测试中，不稳定，请勿安装在生产环境中！)
+
+
+-windows 10/11/2012/2016/2019/2022
+
+#### 默认信息
+
+默认用户名
+
+对于 Linux：root
+
+对于 Windows：Administrator
+
+默认密码
+对于 Linux：LeitboGi0ro
+
+对于 Windows：Teddysun.com
+
+默认端口
+
+对于Linux：与之前通过终端连接的系统相同。
+
+对于 Windows：3389
+
+
+---
+
+
+
+---
