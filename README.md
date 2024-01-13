@@ -140,8 +140,7 @@ bash InstallNET.sh -ubuntu 20.04 -pwd "qwe78907890"
 `-debian 7-12`：Debian 7 及更高版本
 
 
-`-kali Rolling/dev/experimental`：Kali Rolling，开发和实验，“Kali Rolling”显然是最推荐的。
-
+`-kali Rolling/dev/experimental`：Kali Rolling，开发和实验，推荐Kali Rolling
 
 `-centos 7 或 8`：CentOS 7 及更高版本
 
@@ -153,6 +152,8 @@ bash InstallNET.sh -ubuntu 20.04 -pwd "qwe78907890"
 
 
 `-windows 10/11/2012/2016/2019/2022`
+
+`-pwd "密码"`   指定密码
 
 ### 默认信息
 
