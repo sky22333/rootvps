@@ -135,7 +135,7 @@ bash InstallNET.sh -ubuntu 20.04 -pwd "qwe78907890"
 
 ### 运行结尾传递参数
 
-参数详细说明
+重装的系统越新越需要较高的配置
 
 `-debian 7-12`：Debian 7 及更高版本
 
@@ -148,7 +148,7 @@ bash InstallNET.sh -ubuntu 20.04 -pwd "qwe78907890"
 `-almalinux/alma 8/9` : AlmaLinux 8 及更高版本
 
 
-`-ubuntu 20.04/22.04/24.04` 不稳定，可能失联
+`-ubuntu 20.04/22.04/24.04` 不稳定
 
 
 `-windows 10/11/2012/2016/2019/2022`
