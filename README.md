@@ -170,7 +170,7 @@ bash InstallNET.sh -ubuntu 20.04 -pwd "qwe78907890"
 
 默认端口
 
-对于Linux：`与之前通过终端连接的系统相同`
+对于Linux：`与之前的系统相同`
 
 对于 Windows：`3389`
 
