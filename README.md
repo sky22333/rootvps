@@ -135,7 +135,7 @@ bash InstallNET.sh -ubuntu 20.04 -pwd "qwe78907890"
 
 ### 运行结尾传递参数
 
-重装的系统越新越需要较高的配置
+选择越新的系统越需要较高的配置
 
 `-debian 7-12`：Debian 7 及更高版本
 
