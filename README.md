@@ -134,7 +134,7 @@ wget --no-check-certificate -qO InstallNET.sh 'https://gitee.com/mb9e8j2/Tools/r
 
 ### 运行
 ```
-bash InstallNET.sh -debian 9 -pwd "qwe78907890"
+bash InstallNET.sh -debian 9
 ```
 
 ### 运行结尾传递参数
