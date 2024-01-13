@@ -142,7 +142,7 @@ bash InstallNET.sh -ubuntu 20.04 -pwd "qwe78907890"
 
 `-kali Rolling/dev/experimental`：Kali Rolling，开发和实验，推荐Kali Rolling
 
-`-centos 7 或 8`：CentOS 7 及更高版本
+`-centos 7-9`：CentOS 7 及更高版本
 
 
 `-almalinux/alma 8/9` : AlmaLinux 8 及更高版本
