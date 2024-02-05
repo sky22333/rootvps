@@ -134,7 +134,7 @@ wget --no-check-certificate -qO InstallNET.sh 'https://gitee.com/mb9e8j2/Tools/r
 
 ### 运行
 ```
-bash InstallNET.sh -debian 9
+bash InstallNET.sh -debian 11
 ```
 
 ### 运行结尾传递参数
