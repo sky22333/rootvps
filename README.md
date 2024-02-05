@@ -149,7 +149,7 @@ bash InstallNET.sh -debian 9
 `-centos 7-9`：CentOS 7 及更高版本
 
 
-`-almalinux/alma 8/9` : AlmaLinux 8 及更高版本
+`-almalinux/alma 8/9` : AlmaLinux 8 及更高版本（轻量级系统）
 
 
 `-ubuntu 20.04/22.04/24.04` 不稳定，可能失败
