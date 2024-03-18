@@ -1,60 +1,49 @@
 #!/bin/bash
 
-RED="\033[31m"
-GREEN="\033[32m"
-YELLOW="\033[33m"
-NC="\033[0m"
-Info="${GREEN}[信息]${NC}"
-Error="${RED}[错误]${NC}"
-Tip="${YELLOW}[注意]${NC}"
+red() {
+    echo -e "\033[31m\033[01m$1\033[0m"
+}
 
-if [[ $(whoami) != "root" ]]; then
-    echo -e "${Error}请以root用户执行此脚本，或者使用 ${GREEN}sudo -i${NC} 提升权限后再执行。"
+green() {
+    echo -e "\033[32m\033[01m$1\033[0m"
+}
+
+yellow() {
+    echo -e "\033[33m\033[01m$1\033[0m"
+}
+
+# 检测是否为 root 用户
+if [ "$(id -u)" != "0" ]; then
+    red "错误：您必须以 root 用户执行此脚本！"
     exit 1
 fi
 
-read -p "请设置ssh端口号（默认为 22）：" sshport
-sshport=${sshport:-22} # 如果用户没有输入，则使用默认值22
+# 读取用户输入的 SSH 端口，如果未输入则使用默认值 22
+read -p "输入设置的SSH端口（默认22）：" sshport
+sshport=${sshport:-22}
 
-read -p "请设置root密码：" passwd
-if [ -z "$passwd" ]; then
-    echo -e "${Error}未输入密码，无法执行操作！"
-    exit 1
-else
-    password=$passwd
-fi
-
-echo -e "${Info}root密码：$password"
-echo -e "${Info}ssh端口：$sshport"
-echo -e "${Info}用户名：root"
-echo -e "${Info}修改成功！"
-
-echo root:$password | chpasswd
-
-sed -i "s/^#\?Port .*/Port $sshport/" /etc/ssh/sshd_config
-sed -i 's/^#\?PermitRootLogin .*/PermitRootLogin yes/' /etc/ssh/sshd_config
-sed -i 's/^#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config
-sed -i 's/^#\?RSAAuthentication .*/RSAAuthentication yes/' /etc/ssh/sshd_config
-sed -i 's/^#\?PubkeyAuthentication .*/PubkeyAuthentication yes/' /etc/ssh/sshd_config
-
-current_tty=$(tty)
-pts_list=$(who | awk '{print $2}')
-for pts in $pts_list; do
-    if [ "$current_tty" != "/dev/$pts" ]; then
-        pkill -9 -t $pts
-    fi
+# 读取用户输入的 root 密码
+read -p "输入设置的root密码：" password
+while [[ -z $password ]]; do
+    red "密码未设置，请输入设置的root密码："
+    read -p "输入设置的root密码：" password
 done
 
-if systemctl --all --type service | grep -q sshd.service; then
-    SSH_SERVICE_NAME="sshd"
-else
-    SSH_SERVICE_NAME="ssh"
-fi
+# 更新 root 密码
+echo root:$password | chpasswd
 
-systemctl restart $SSH_SERVICE_NAME
-if systemctl status $SSH_SERVICE_NAME >/dev/null; then
-    echo -e "${Info}SSH服务重启 ${GREEN}成功${NC}"
-else
-    echo -e "${Error}SSH服务重启 ${RED}失败${NC}"
-    exit 1
-fi
+# 更新 SSH 配置
+sed -i "s/^#\?Port .*/Port $sshport/" /etc/ssh/sshd_config
+sed -i "s/^#\?PermitRootLogin .*/PermitRootLogin yes/" /etc/ssh/sshd_config
+sed -i "s/^#\?PasswordAuthentication .*/PasswordAuthentication yes/" /etc/ssh/sshd_config
+
+# 重启 SSH 服务
+service ssh restart 2>/dev/null
+service sshd restart 2>/dev/null
+
+# 显示结果
+green "VPS root登录信息设置完成！"
+green "VPS登录端口为：$sshport"
+green "用户名：root"
+green "密码：$password"
+yellow "请妥善保存好登录信息！"
