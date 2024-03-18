@@ -12,7 +12,7 @@ wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/ro
 ###  修改root密码简洁版：
 
 ```
-wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/root && bash root
+wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/root.sh && bash root.sh
 ```
 
 ---
