@@ -37,7 +37,7 @@ wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/in
 wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/install.sh && chmod +x install.sh && sudo ./install.sh -d buster
 ```
 
-  默认登录信息
+  默认debian系统登录信息
   
   用户名：```root```
   
