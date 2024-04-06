@@ -29,12 +29,12 @@ wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/ro
 
 ####  自定义密码：
 ```
-wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/install.sh && chmod +x install.sh && sudo ./install.sh -u focal -p "自定义密码"
+wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/install.sh && chmod +x install.sh && sudo ./install.sh -d buster -p "自定义密码"
 ```
 
 ####  默认密码：
 ```
-wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/install.sh && chmod +x install.sh && sudo ./install.sh -u focal
+wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/install.sh && chmod +x install.sh && sudo ./install.sh -d buster
 ```
 
   默认登录信息
