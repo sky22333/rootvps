@@ -5,14 +5,14 @@
 ###  修改root密码：
 
 ```
-wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/rootvps && bash rootvps
+wget -N --no-check-certificate https://github.com/sky22333/rootvps/raw/main/rootvps && bash rootvps
 ```
 
 
 ###  修改root密码简洁版：
 
 ```
-wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/root.sh && bash root.sh
+wget -N --no-check-certificate https://github.com/sky22333/rootvps/raw/main/root.sh && bash root.sh
 ```
 
 ---
@@ -29,12 +29,12 @@ wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/ro
 
 ####  自定义密码：
 ```
-wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/install.sh && chmod +x install.sh && sudo ./install.sh -d 11 -p "自定义密码"
+wget -N --no-check-certificate https://github.com/sky22333/rootvps/raw/main/install.sh && chmod +x install.sh && sudo ./install.sh -d 11 -p "自定义密码"
 ```
 
 ####  默认密码：
 ```
-wget -N --no-check-certificate https://github.com/taotao1058/rootvps/raw/main/install.sh && chmod +x install.sh && sudo ./install.sh -d 11
+wget -N --no-check-certificate https://github.com/sky22333/rootvps/raw/main/install.sh && chmod +x install.sh && sudo ./install.sh -d 11
 ```
 
   默认debian 11系统
