@@ -17,7 +17,7 @@ wget -N --no-check-certificate https://github.com/sky22333/rootvps/raw/main/root
 
 ---
 
-### ubuntu系统添加root密码，实现root用户登录
+#### ubuntu系统添加root密码，实现root用户登录
 ```
 sudo passwd root
 ```
