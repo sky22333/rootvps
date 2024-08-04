@@ -4,15 +4,15 @@
 
 ###  修改root密码：
 
-```
-wget -N --no-check-certificate https://github.com/sky22333/rootvps/raw/main/rootvps && bash rootvps
-```
 
-
+```
+bash <(wget -qO- -o- https://github.com/sky22333/rootvps/raw/main/rootvps.sh)
+```
 ###  修改root密码简洁版：
 
+
 ```
-wget -N --no-check-certificate https://github.com/sky22333/rootvps/raw/main/root.sh && bash root.sh
+bash <(wget -qO- -o- https://github.com/sky22333/rootvps/raw/main/root.sh)
 ```
 ---
 
