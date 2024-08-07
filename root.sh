@@ -18,7 +18,6 @@ if [ "$(id -u)" != "0" ]; then
     exit 1
 fi
 
-sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 sudo hostnamectl set-hostname localhost
 
 # 读取用户输入的 SSH 端口，如果未输入则使用默认值 22
