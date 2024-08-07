@@ -49,6 +49,9 @@ sudo chattr -i /etc/passwd /etc/shadow >/dev/null 2>&1
 sudo chattr -a /etc/passwd /etc/shadow >/dev/null 2>&1
 sudo lsattr /etc/passwd /etc/shadow >/dev/null 2>&1
 
+sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+sudo hostnamectl set-hostname localhost
+
 read -p "输入设置的SSH端口（默认22）：" sshport
 [[ -z $sshport ]] && red "端口未设置，将使用默认22端口" && sshport=22
 read -p "输入设置的root密码：" password
@@ -74,4 +77,4 @@ if [[ -n $v4 && -n $v6 ]]; then
 fi
 green "用户名：root"
 green "密码：$password"
-yellow "请妥善保存好登录信息！然后重启VPS确保设置已保存！TG频道推广：@kexueshangwang88"
+yellow "请妥善保存好登录信息！然后重启确保设置正常加载！"
