@@ -48,8 +48,6 @@ sudo lsattr /etc/passwd /etc/shadow >/dev/null 2>&1
 sudo chattr -i /etc/passwd /etc/shadow >/dev/null 2>&1
 sudo chattr -a /etc/passwd /etc/shadow >/dev/null 2>&1
 sudo lsattr /etc/passwd /etc/shadow >/dev/null 2>&1
-
-sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 sudo hostnamectl set-hostname localhost
 
 read -p "输入设置的SSH端口（默认22）：" sshport
