@@ -18,6 +18,9 @@ if [ "$(id -u)" != "0" ]; then
     exit 1
 fi
 
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+hostnamectl set-hostname localhost
+
 # 读取用户输入的 SSH 端口，如果未输入则使用默认值 22
 read -p "输入设置的SSH端口（默认22）：" sshport
 sshport=${sshport:-22}
