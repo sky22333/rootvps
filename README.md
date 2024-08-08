@@ -139,15 +139,16 @@ bash InstallNET.sh -debian 11
 
 选择越新的系统越需要较高的配置
 
-`-debian 7-12`：Debian 7 及更高版本
+`-debian 7-12` Debian 7 及更高版本
 
 
-`-kali Rolling/dev/experimental`：Kali Rolling，开发和实验，推荐Kali Rolling
+`-kali Rolling/dev/experimental` Kali Rolling，开发和实验，推荐Kali Rolling
 
-`-centos 7-9`：CentOS 7 及更高版本
+`-centos 7-9` CentOS 7 及更高版本
 
+`-alpine 3.16-3.18/edge` Alpine Linux 3.16 及更高版本，轻量级系统，为了保持更新到最新版本，推荐edge
 
-`-almalinux/alma 8/9` : AlmaLinux 8 及更高版本（轻量级系统）
+`-almalinux/alma 8/9`  AlmaLinux 8 及更高版本
 
 
 `-ubuntu 20.04/22.04/24.04` 不稳定，可能失败
